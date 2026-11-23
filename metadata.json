@@ -1,0 +1,6 @@
+{
+  "name": "SurveiKit - Alat Bantu Riset & Survei Mahasiswa",
+  "description": "Platform bimbingan metodologi riset dan kalkulator sampel ilmiah untuk mahasiswa dan akademisi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

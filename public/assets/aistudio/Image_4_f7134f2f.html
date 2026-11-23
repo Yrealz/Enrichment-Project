@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>SurveiKit - Alat Bantu Riset &amp; Survei Mahasiswa</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary": "#ffffff", "on-background": "#0f1d28", "surface-container": "#e1f0ff", "error-container": "#ffdad6", "secondary-container": "#d4e3e2", "surface-container-highest": "#d5e4f4", "on-primary": "#ffffff", "surface": "#f6f9ff", "on-secondary-fixed-variant": "#3c4949", "on-primary-container": "#9cede6", "on-surface": "#0f1d28", "primary-fixed-dim": "#84d5ce", "surface-bright": "#f6f9ff", "surface-container-high": "#dbeaf9", "on-error-container": "#93000a", "inverse-primary": "#84d5ce", "surface-container-low": "#ecf4ff", "error": "#ba1a1a", "background": "#f6f9ff", "surface-dim": "#cddceb", "surface-tint": "#006a65", "on-primary-fixed-variant": "#00504c", "inverse-surface": "#24323d", "on-surface-variant": "#3e4948", "surface-variant": "#d5e4f4", "outline": "#6e7978", "secondary": "#536161", "on-secondary-fixed": "#111e1e", "on-tertiary-container": "#d0e0f0", "primary-container": "#0b6e69", "on-tertiary-fixed": "#0d1d28", "tertiary": "#3c4c58", "on-primary-fixed": "#00201e", "on-secondary": "#ffffff", "outline-variant": "#bec9c7", "primary": "#005450", "tertiary-fixed-dim": "#b8c9d7", "secondary-fixed": "#d7e5e5", "on-error": "#ffffff", "on-secondary-container": "#576565", "tertiary-container": "#546471", "inverse-on-surface": "#e6f2ff", "tertiary-fixed": "#d4e5f4", "on-tertiary-fixed-variant": "#394955", "primary-fixed": "#a0f1ea", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#bbc9c9" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "2rem", "gutter": "1.5rem", "margin-mobile": "1rem", "space-xl": "2.25rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-md": "1rem" }, "fontFamily": { "headline-xl": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "code-sm": ["IBM Plex Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "code-md": ["IBM Plex Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "code-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "750" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "code-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "500" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.025em", "fontWeight": "800" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-outline-variant"><div class="h-[72px] max-w-[1280px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><img alt="SurveiKit Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XWEEW3SGVDnHDi1MGxqyr_WV74Y74jtKFD2kLijCs2W9lmCSuhkE-JjA-UWRyGoKNziHZeCwluJX3bk-k6Rzq__RhDZ307YW1ABHf8eCFHZoJp04StqMmRVvg1hUtSCKC-khZV8v8oiBntWJFXgXwm_Q6NoW-mdDMjSKubjmyWh2K-tZBwKqYetx7o2VoeBZuWEPo6eicYS5FagyADEzeDJePJOt1L1AmmXv1kRC52-MznKuCKcBUs2Q"/><span class="font-headline-md text-headline-md font-extrabold tracking-tight text-on-surface">SurveiKit</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-label-md"><a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" data-path="tentang-survei" href="#">Tentang survei</a><a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" data-path="cara-kerja" href="#">Cara kerja</a><a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" data-path="toolkit-survei" href="#">Toolkit survei</a><a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" data-path="panduan-metode" href="#">Panduan metode</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center justify-center min-h-[44px] px-5 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors" data-path="login" href="#">Masuk</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-[72px] bg-background min-h-[calc(100vh-145px)]"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1040px] mx-auto px-margin-mobile md:px-margin py-8 md:py-10 space-y-space-lg md:space-y-space-xl">
+<!-- Section 1: Header & Back Link -->
+<div class="flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:-translate-x-0.5">arrow_back</span>
+<span>Ubah topik</span>
+</a>
+<span class="font-code-sm text-code-sm uppercase tracking-widest text-secondary font-medium">HASIL ANALISIS TOPIK</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface pt-space-xs tracking-tight">
+        Metode yang cocok untuk proyekmu
+      </h1>
+</div>
+<!-- Section 2: Card Topik Kamu -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-sm">
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">topic</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Topik kamu</span>
+</div>
+<blockquote class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-md leading-snug">
+        “Pengaruh penggunaan media sosial terhadap prestasi belajar mahasiswa di Jakarta”
+      </blockquote>
+<div class="flex flex-wrap gap-space-xs md:gap-space-sm pt-space-xs">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-semibold text-secondary mr-1.5">Variabel bebas:</span> penggunaan media sosial
+        </span>
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-semibold text-secondary mr-1.5">Variabel terikat:</span> prestasi belajar
+        </span>
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-semibold text-secondary mr-1.5">Populasi:</span> mahasiswa
+        </span>
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-semibold text-secondary mr-1.5">Lokasi:</span> Jakarta
+        </span>
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-semibold text-secondary mr-1.5">Pendekatan:</span> kuantitatif
+        </span>
+</div>
+</div>
+<!-- Section 3: Main Recommendation Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md md:p-space-lg shadow-md relative overflow-hidden bg-gradient-to-b from-surface-container-low/40 via-surface-container-lowest to-surface-container-lowest">
+<!-- Highlight Accent Bar on Left/Top -->
+<div class="w-full flex flex-col gap-space-md">
+<!-- Badge & Score Bar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-3.5 py-1.5 rounded-full bg-primary/10 text-primary font-label-md text-label-md font-semibold self-start">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Rekomendasi utama · Metode survei</span>
+</div>
+<div class="inline-flex items-center gap-space-sm bg-surface-container-low px-3 py-1.5 rounded-lg self-start sm:self-auto">
+<span class="font-label-md text-label-md text-secondary">Tingkat kecocokan:</span>
+<span class="font-label-md text-label-md text-primary font-bold">Tinggi</span>
+<div class="flex items-center gap-1 pl-1">
+<span class="w-4 h-2 rounded-full bg-primary"></span>
+<span class="w-4 h-2 rounded-full bg-primary"></span>
+<span class="w-4 h-2 rounded-full bg-primary"></span>
+</div>
+</div>
+</div>
+<!-- Title -->
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Survei kuantitatif cross-sectional dengan kuesioner online
+          </h2>
+<div class="mt-space-sm bg-surface-container-low/60 rounded-xl p-space-md">
+<p class="font-label-md text-label-md font-bold text-primary mb-1">MENGAPA COCOK</p>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+              Topikmu menguji hubungan antar variabel pada banyak orang dalam satu waktu. Datanya berupa kebiasaan dan hasil belajar yang bisa dilaporkan sendiri, sehingga kuesioner terstandar efisien dan hasilnya bisa dianalisis secara statistik.
+            </p>
+</div>
+</div>
+<!-- Pros & Cons Comparison -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Pros Box -->
+<div class="bg-secondary-container/40 rounded-xl p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-primary mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">Kelebihan</span>
+</div>
+<ul class="space-y-space-sm font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check</span>
+<span>Menjangkau banyak responden dengan biaya dan waktu relatif rendah</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check</span>
+<span>Data terstandar, mudah dibandingkan dan dianalisis secara statistik</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check</span>
+<span>Responden mengisi kapan saja, privasi lebih terjaga</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check</span>
+<span>Mudah dibagikan lewat tautan dan diulang pada kelompok lain</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Cons Box -->
+<div class="bg-error-container/30 rounded-xl p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-error mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">cancel</span>
+<span class="font-headline-sm text-headline-sm font-bold text-error">Kekurangan</span>
+</div>
+<ul class="space-y-space-sm font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span>
+<span>Bergantung pada kejujuran dan ingatan responden</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span>
+<span>Tingkat respons bisa rendah tanpa pengingat</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span>
+<span>Tidak bisa menggali alasan di balik jawaban</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">close</span>
+<span>Menunjukkan hubungan antar variabel, bukan sebab-akibat pasti</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Alternative Methods Considered -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">alt_route</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Metode lain yang dipertimbangkan</h3>
+</div>
+<div class="flex flex-col space-y-space-sm">
+<!-- Item 1 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-md bg-surface-container-low rounded-lg gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-lg font-bold text-on-surface">Wawancara mendalam</span>
+<span class="font-body-md text-body-md text-secondary">Berguna untuk menggali alasan, tetapi jangkauannya sempit.</span>
+</div>
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold self-start sm:self-auto shrink-0">
+            Pelengkap
+          </span>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-md bg-surface-container-low rounded-lg gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-lg font-bold text-on-surface">Studi data sekunder</span>
+<span class="font-body-md text-body-md text-secondary">Bisa dipakai bila data nilai dan aktivitas sudah tersedia dari pihak kampus.</span>
+</div>
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold self-start sm:self-auto shrink-0">
+            Alternatif
+          </span>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-md bg-surface-container-low rounded-lg gap-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-lg font-bold text-on-surface">Eksperimen</span>
+<span class="font-body-md text-body-md text-secondary">Sulit dan kurang etis untuk memanipulasi penggunaan media sosial responden.</span>
+</div>
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-error-container/40 text-error font-label-sm text-label-sm font-semibold self-start sm:self-auto shrink-0">
+            Kurang cocok
+          </span>
+</div>
+</div>
+</div>
+<!-- Section 5: Solid Teal Call to Action Module -->
+<div class="bg-primary text-on-primary rounded-2xl p-space-lg md:p-space-xl shadow-lg relative overflow-hidden">
+<!-- Ambient light effect -->
+<div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-primary-fixed-dim/10 pointer-events-none blur-3xl"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="space-y-space-sm max-w-xl">
+<h2 class="font-headline-lg text-headline-lg font-extrabold text-on-primary leading-tight">
+            Metode survei terdeteksi, toolkit pembuat kuesioner siap dipakai
+          </h2>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+            Mulai dari menghitung jumlah responden, lalu lanjut menguji kuesionermu sebelum disebar.
+          </p>
+</div>
+<div class="shrink-0">
+<a class="inline-flex items-center justify-center gap-space-xs min-h-[48px] px-6 py-3 rounded-xl bg-surface-container-lowest text-primary font-headline-sm text-body-lg font-bold shadow hover:bg-surface-container-low transition-all" href="#">
+<span>Buka toolkit</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Feature Badges -->
+<div class="relative z-10 mt-space-lg pt-space-md flex flex-wrap gap-space-xs md:gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-on-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">calculate</span>
+<span>Kalkulator sampel</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-on-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+<span>Cek validitas</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-on-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">sync_saved_locally</span>
+<span>Cek reliabilitas</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-on-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">spellcheck</span>
+<span>Cek kalimat pertanyaan</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest/15 backdrop-blur-md text-on-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">analytics</span>
+<span>Analisis data</span>
+</span>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant py-6"><div class="max-w-[1280px] mx-auto px-margin text-center"><p class="font-body-sm text-body-sm text-secondary">SurveiKit · Alat bantu riset untuk mahasiswa</p></div></footer></body></html>

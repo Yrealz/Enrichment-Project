@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "inverse-surface": "#24323d",
+          "on-primary-fixed-variant": "#00504c",
+          "surface-bright": "#f6f9ff",
+          "on-surface-variant": "#3e4948",
+          "surface-variant": "#d5e4f4",
+          "background": "#f6f9ff",
+          "on-tertiary-fixed": "#0d1d28",
+          "on-tertiary": "#ffffff",
+          "on-secondary-container": "#576565",
+          "error-container": "#ffdad6",
+          "outline-variant": "#bec9c7",
+          "surface-container-high": "#dbeaf9",
+          "secondary-fixed": "#d7e5e5",
+          "surface-tint": "#006a65",
+          "error": "#ba1a1a",
+          "surface-dim": "#cddceb",
+          "surface-container": "#e1f0ff",
+          "surface": "#f6f9ff",
+          "on-primary": "#ffffff",
+          "on-secondary-fixed-variant": "#3c4949",
+          "surface-container-highest": "#d5e4f4",
+          "tertiary-fixed": "#d4e5f4",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "secondary-container": "#d4e3e2",
+          "primary-fixed-dim": "#84d5ce",
+          "tertiary-container": "#546471",
+          "secondary": "#536161",
+          "tertiary-fixed-dim": "#b8c9d7",
+          "on-background": "#0f1d28",
+          "outline": "#6e7978",
+          "on-secondary-fixed": "#111e1e",
+          "on-error-container": "#93000a",
+          "primary-fixed": "#a0f1ea",
+          "on-primary-fixed": "#00201e",
+          "inverse-on-surface": "#e6f2ff",
+          "inverse-primary": "#84d5ce",
+          "on-tertiary-fixed-variant": "#394955",
+          "tertiary": "#3c4c58",
+          "primary": "#005450",
+          "on-surface": "#0f1d28",
+          "surface-container-low": "#ecf4ff",
+          "secondary-fixed-dim": "#bbc9c9",
+          "primary-container": "#0b6e69",
+          "on-primary-container": "#9cede6",
+          "on-tertiary-container": "#d0e0f0"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-lg": "1.5rem",
+          "space-md": "1rem",
+          "gutter-mobile": "1rem",
+          "margin-mobile": "1rem",
+          "space-xl": "2.25rem",
+          "space-xs": "0.25rem",
+          "margin": "2rem",
+          "space-sm": "0.5rem",
+          "gutter": "1.5rem"
+        },
+        "fontFamily": {
+          "code-sm": [
+            "IBM Plex Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "code-md": [
+            "IBM Plex Sans"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "code-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-md": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-xl-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "750"
+            }
+          ],
+          "code-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen flex flex-col justify-between"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="h-16 max-w-[1200px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between"><a class="flex items-center gap-space-sm focus:outline-none" data-path="beranda" href="#"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">check</span></div><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">SurveiKit</span></a><nav class="flex items-center" data-active-classes="text-primary font-label-md"><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-xs px-space-sm" data-path="beranda" href="#">Beranda</a></nav></div></header><main class="w-full pt-16 flex-1 flex flex-col justify-center items-center px-margin-mobile md:px-margin py-space-xl"><div class="flex flex-col w-full items-center justify-center py-space-md md:py-space-xl">
+<!-- Subtle Background Academic Geometry Accents -->
+<div class="relative w-full max-w-[440px] mx-auto">
+<!-- Ambient Underlay Glow -->
+<div class="absolute -top-10 -left-10 w-48 h-48 bg-primary-fixed-dim/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -right-8 w-44 h-44 bg-surface-container-high/60 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Main Registration Card -->
+<div class="relative w-full bg-surface-container-lowest rounded-2xl shadow-[0_4px_24px_-4px_rgba(15,29,40,0.06),0_1px_4px_rgba(15,29,40,0.03)] p-8">
+<!-- Academic Trust Micro-Badge -->
+<div class="flex items-center justify-between mb-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/50 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">school</span>
+          Portal Peneliti &amp; Mahasiswa
+        </span>
+<span class="font-code-sm text-code-sm text-secondary tracking-tight">v2.4.0</span>
+</div>
+<!-- Card Title & Subtitle -->
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-1">
+        Selamat datang di SurveiKit
+      </h1>
+<p class="font-body-md text-body-md text-secondary mt-1 mb-6">
+        Masuk atau buat akun untuk melanjutkan.
+      </p>
+<!-- Segmented Control Tab Switcher -->
+<div aria-label="Opsi autentikasi" class="w-full bg-surface-container p-1 rounded-xl flex items-center gap-1 select-none" role="tablist">
+<button aria-selected="false" class="flex-1 h-9 rounded-lg flex items-center justify-center font-label-md text-label-md text-secondary hover:text-on-surface transition-all duration-150" id="tab-masuk" onclick="toggleAuthTab('masuk')" role="tab" type="button">
+          Masuk
+        </button>
+<button aria-selected="true" class="flex-1 h-9 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-[0_1px_3px_rgba(15,29,40,0.08)] flex items-center justify-center transition-all duration-150" id="tab-daftar" onclick="toggleAuthTab('daftar')" role="tab" type="button">
+          Daftar
+        </button>
+</div>
+<!-- Sign-Up Form Form Module -->
+<form class="mt-6 flex flex-col gap-4" id="signup-form" onsubmit="event.preventDefault();">
+<!-- Field: Nama Lengkap -->
+<div class="flex flex-col gap-1.5 text-left">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="full-name">
+<span>Nama lengkap</span>
+<span class="font-code-sm text-code-sm text-secondary/70">Wajib</span>
+</label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 text-secondary material-symbols-outlined text-[18px] pointer-events-none">person</span>
+<input class="w-full h-11 pl-10 pr-3.5 bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-secondary/60 rounded-[10px] shadow-[inset_0_0_0_1px_rgba(190,201,199,0.5)] focus:shadow-[inset_0_0_0_2px_#0B6E69,0_0_0_3px_rgba(11,110,105,0.12)] focus:outline-none transition-all" id="full-name" name="fullname" placeholder="Contoh: Budi Pratama" required="" type="text"/>
+</div>
+</div>
+<!-- Field: Email -->
+<div class="flex flex-col gap-1.5 text-left">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="email">
+<span>Email</span>
+<span class="font-code-sm text-code-sm text-secondary/70">Institusi / Pribadi</span>
+</label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 text-secondary material-symbols-outlined text-[18px] pointer-events-none">mail</span>
+<input class="w-full h-11 pl-10 pr-3.5 bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-secondary/60 rounded-[10px] shadow-[inset_0_0_0_1px_rgba(190,201,199,0.5)] focus:shadow-[inset_0_0_0_2px_#0B6E69,0_0_0_3px_rgba(11,110,105,0.12)] focus:outline-none transition-all" id="email" name="email" placeholder="nama@email.com" required="" type="email"/>
+</div>
+</div>
+<!-- Field: Kata Sandi -->
+<div class="flex flex-col gap-1.5 text-left">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="password">
+<span>Kata sandi</span>
+<span class="font-code-sm text-code-sm text-secondary/70">≥ 8 karakter</span>
+</label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 text-secondary material-symbols-outlined text-[18px] pointer-events-none">lock</span>
+<input class="w-full h-11 pl-10 pr-10 bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-secondary/60 rounded-[10px] shadow-[inset_0_0_0_1px_rgba(190,201,199,0.5)] focus:shadow-[inset_0_0_0_2px_#0B6E69,0_0_0_3px_rgba(11,110,105,0.12)] focus:outline-none transition-all" id="password" minlength="8" name="password" placeholder="Minimal 8 karakter" required="" type="password"/>
+<button aria-label="Tampilkan kata sandi" class="absolute right-3 text-secondary hover:text-on-surface focus:outline-none" onclick="togglePasswordVisibility('password', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Field: Ulangi Kata Sandi -->
+<div class="flex flex-col gap-1.5 text-left">
+<label class="font-label-md text-label-md text-on-surface" for="confirm-password">
+            Ulangi kata sandi
+          </label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 text-secondary material-symbols-outlined text-[18px] pointer-events-none">lock_reset</span>
+<input class="w-full h-11 pl-10 pr-10 bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-secondary/60 rounded-[10px] shadow-[inset_0_0_0_1px_rgba(190,201,199,0.5)] focus:shadow-[inset_0_0_0_2px_#0B6E69,0_0_0_3px_rgba(11,110,105,0.12)] focus:outline-none transition-all" id="confirm-password" minlength="8" name="confirmPassword" placeholder="Ulangi kata sandi" required="" type="password"/>
+<button aria-label="Tampilkan ulangi kata sandi" class="absolute right-3 text-secondary hover:text-on-surface focus:outline-none" onclick="togglePasswordVisibility('confirm-password', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Password Strength Micro-Indicator -->
+<div class="flex items-center gap-1.5 px-1 pt-0.5">
+<div class="h-1 flex-1 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary w-2/3 transition-all duration-300" id="strength-bar"></div>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">Kekuatan standar</span>
+</div>
+<!-- Submit Button: Buat Akun -->
+<button class="w-full h-11 mt-2 bg-primary-container hover:bg-primary text-on-primary font-headline-sm text-label-md tracking-wide rounded-[10px] flex items-center justify-center gap-2 shadow-[0_2px_8px_rgba(11,110,105,0.25)] hover:shadow-[0_4px_12px_rgba(11,110,105,0.3)] active:scale-[0.99] transition-all" type="submit">
+<span>Buat akun</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</form>
+<!-- Visual Soft Divider -->
+<div class="relative my-5 flex items-center justify-center">
+<div class="w-full h-[1px] bg-outline-variant/30"></div>
+<span class="absolute px-3 bg-surface-container-lowest font-body-sm text-body-sm text-secondary">
+          atau
+        </span>
+</div>
+<!-- Outlined Button: Continue with Google -->
+<button class="w-full h-11 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-md text-label-md rounded-[10px] shadow-[inset_0_0_0_1px_rgba(190,201,199,0.55)] flex items-center justify-center gap-2.5 transition-all active:scale-[0.99]" onclick="simulateGoogleAuth()" type="button">
+<svg aria-hidden="true" class="w-4 h-4 shrink-0" viewbox="0 0 24 24">
+<path d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z" fill="#4285F4"></path>
+<path d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z" fill="#34A853"></path>
+<path d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.17 0 9.98 0 12s.45 3.83 1.25 5.42l4.03-3.15z" fill="#FBBC05"></path>
+<path d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z" fill="#EA4335"></path>
+</svg>
+<span>Lanjutkan dengan Google</span>
+</button>
+<!-- Terms & Legal Disclaimers -->
+<p class="font-body-sm text-body-sm text-secondary text-center mt-6 select-none opacity-80 leading-relaxed">
+        [Teks persetujuan syarat dan ketentuan menyusul]
+      </p>
+<!-- Methodology Assistance Notice Footer inside card -->
+<div class="mt-5 pt-4 bg-surface-container-low rounded-xl px-3.5 py-2.5 flex items-start gap-2.5 text-left">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Data Riset Terlindungi</span>
+<span class="font-body-sm text-body-sm text-secondary text-[11px] leading-tight">Privasi sampling dan instrumen kuesioner Anda dienkripsi untuk kepatuhan etika riset.</span>
+</div>
+</div>
+</div>
+<!-- Supplementary Quick Navigation Links -->
+<div class="mt-4 flex items-center justify-center gap-4 text-center">
+<a class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">help</span>
+        Bantuan Metodologi
+      </a>
+<span class="text-outline-variant text-[10px]">•</span>
+<a class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">calculate</span>
+        Kalkulator Sampel Bebas
+      </a>
+</div>
+</div>
+</div>
+<script>
+  function toggleAuthTab(tab) {
+    const masukBtn = document.getElementById('tab-masuk');
+    const daftarBtn = document.getElementById('tab-daftar');
+    
+    if (tab === 'masuk') {
+      masukBtn.className = 'flex-1 h-9 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-[0_1px_3px_rgba(15,29,40,0.08)] flex items-center justify-center transition-all duration-150';
+      masukBtn.setAttribute('aria-selected', 'true');
+      
+      daftarBtn.className = 'flex-1 h-9 rounded-lg flex items-center justify-center font-label-md text-label-md text-secondary hover:text-on-surface transition-all duration-150';
+      daftarBtn.setAttribute('aria-selected', 'false');
+    } else {
+      daftarBtn.className = 'flex-1 h-9 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-[0_1px_3px_rgba(15,29,40,0.08)] flex items-center justify-center transition-all duration-150';
+      daftarBtn.setAttribute('aria-selected', 'true');
+      
+      masukBtn.className = 'flex-1 h-9 rounded-lg flex items-center justify-center font-label-md text-label-md text-secondary hover:text-on-surface transition-all duration-150';
+      masukBtn.setAttribute('aria-selected', 'false');
+    }
+  }
+
+  function togglePasswordVisibility(fieldId, triggerBtn) {
+    const field = document.getElementById(fieldId);
+    const icon = triggerBtn.querySelector('.material-symbols-outlined');
+    if (!field || !icon) return;
+
+    if (field.type === 'password') {
+      field.type = 'text';
+      icon.textContent = 'visibility_off';
+    } else {
+      field.type = 'password';
+      icon.textContent = 'visibility';
+    }
+  }
+
+  function simulateGoogleAuth() {
+    const submitBtn = document.querySelector('button[type="submit"]');
+    if (submitBtn) {
+      submitBtn.classList.add('opacity-80');
+      setTimeout(() => submitBtn.classList.remove('opacity-80'), 600);
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 py-space-lg"><div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin text-center font-body-sm text-body-sm text-secondary">SurveiKit · Alat bantu riset untuk mahasiswa</div></footer></body></html>
